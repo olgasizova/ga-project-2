@@ -1,0 +1,41 @@
+{
+  "name": "ga-project-2",
+  "version": "1.0.0",
+  "description": "Onboard App ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olgasizova/ga-project-2.git"
+  },
+  "author": "Olga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olgasizova/ga-project-2/issues"
+  },
+  "homepage": "https://github.com/olgasizova/ga-project-2#readme",
+  "dependencies": {
+    "bcryptjs": "^2.3.0",
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "crypto": "0.0.3",
+    "dotenv": "^2.0.0",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "express-session": "^1.14.1",
+    "mongodb": "^2.2.11",
+    "morgan": "^1.7.0",
+    "node-fetch": "^1.6.3",
+    "nodemon": "^1.11.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "eslint": "^3.8.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.4.1"
+  }
+}
