@@ -1,0 +1,33 @@
+body {
+  color: white;
+}
+
+.main-container {
+  width: 100%;
+  height: 600px;
+  background-color: green;
+  position: absolute;
+}
+
+.main-container-signup {
+  width: 100%;
+  height: 600px;
+  background-color: orange;
+  position: absolute;
+}
+
+.main-container-profile {
+  width: 100%;
+  height: 600px;
+  background-color: pink;
+  position: absolute;
+
+}
+
+.main-container-dashboard {
+  width: 100%;
+  height: 600px;
+  background-color: blue;
+  position: absolute;
+
+}
