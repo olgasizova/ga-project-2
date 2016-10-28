@@ -10,6 +10,21 @@
 <body>
 <div class="main-container-profile">
 <h1>Profile</h1>
+    <div class="address-non-validated">
+    <span>Address Line 1</span><br>
+    <input type="text" name="AddressLine1"><br>
+    <span>Address Line 2</span><br>
+    <input type="text" name="AddressLine2"><br><br>
+    <button type="button">Validate</button>
+    </div>
+    <div class="address-validated"><br>
+    <span>Validated Address</span><br>
+    <textarea name="validated-address">
+
+      <%= validAddress.ErrorMessage %>
+    </textarea><br>
+    <button type="button">Save</button>
+    </div>
 </div>
 
 </body>
