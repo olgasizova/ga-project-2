@@ -1,12 +1,12 @@
 const Router = require('express').Router();
-const { unsplashImages } = require('../services/unsplash');
+// const { unsplashImages } = require('../services/unsplash');
 
 
 
 
-Router.get('/login', unsplashImages, (req, res) => {
+Router.get('/login', (req, res) => {
   res.render('index', {
-    image: res.backgroundImage.urls,
+    // image: res.backgroundImage.urls,
 
   });
 
@@ -14,3 +14,6 @@ Router.get('/login', unsplashImages, (req, res) => {
 });
 
 module.exports = Router;
+
+
+// unsplashImages,

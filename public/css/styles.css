@@ -2,6 +2,35 @@ body {
   color: white;
 }
 
+h1 {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.error {
+  color: red;
+}
+
+.sign-up {
+  margin: auto;
+  margin-top: 125px;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: orange;
+}
+
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+
+}
+
+.user-name {
+  margin: auto;
+  width: 200px;
+}
+
 .main-container {
   width: 100%;
   height: 840px;
@@ -22,8 +51,8 @@ body {
 
 .main-container-signup {
   width: 100%;
-  height: 600px;
-  background-color: orange;
+  height: 840px;
+  background-color: #faebd7;
   position: absolute;
 }
 
