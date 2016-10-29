@@ -1,0 +1,102 @@
+html,body{
+  background-color: red;
+  margin: 0px;
+}
+
+div.main-container-dashboard{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+}
+
+div.header{
+  position:absolute;
+  height: 100px;
+  width: 100%;
+  background-color: green;
+}
+
+div.left-pan{
+  position:absolute;
+  left:0px;
+  top:100px;
+  height: 1000px;
+  width: 50%;
+  background-color: yellow;
+}
+
+div.right-pan{
+  position:absolute;
+  right:0px;
+  top:100px;
+  height: 1000px;
+  width: 50%;
+  background-color: white;
+}
+
+div.photo
+{
+  position:static;
+  background-color: blue;
+  width:200px;
+  height:200px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+table.emp-description{
+  position:absolute;
+  padding:20px;
+  color:black;
+  border:1px solid black;
+  width:80%;
+  left:10%;
+}
+
+
+#ui-fname {
+  height: 20px;
+  text-align: right;
+}
+
+#ui-lname {
+  height: 20px;
+  text-align: left;
+}
+
+
+table.emp-description td{
+  border-bottom:2px solid blue;
+  width:50%;
+}
+
+div.emp-list-container{
+  position:absolute;
+  width:80%;
+  left:10%;
+  height:600px;
+  overflow:auto;
+  background-color:tomato;
+  border:1px solid black;
+}
+
+table.emp-list{
+  position:absolute;
+  padding:20px;
+  color:black;
+  width:80%;
+  left:10%;
+
+}
+
+
+table.emp-list td{
+  border: 1px solid blue;
+}
+
+
+
+
