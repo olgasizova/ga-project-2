@@ -1,6 +1,7 @@
 const fetch = require('node-fetch');
 
-const API_URL = "http://www.yaddress.net/api/address?AddressLine1=504";
+const API_URL = 'http://www.yaddress.net/api/address?AddressLine1=504';
+
 
 function validateAddress(req, res, next){
   console.log(`${API_URL}`);
@@ -17,5 +18,6 @@ function validateAddress(req, res, next){
   })
 
 }
+
 
 module.exports = { validateAddress }
