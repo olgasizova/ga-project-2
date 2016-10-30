@@ -31,12 +31,16 @@ function insertUser(newUser){
 
     $.ajax({
     url: '/signup/adduser',
-    data:newUser,
+    data: JSON.stringify(newUser),
     method: 'POST',
-    dataType: 'json'
+    dataType: 'json',
+    contentType: 'application/json'
+
+
   })
   .done(data =>{
-    $(location).attr('href','./login');
+    let newUsrId = data[0]._id;
+    $(location).attr('href','./profile?_id='+ newUsrId);
   })
   .fail((err,status)=>{
     $('div.error').text(err.responseText);

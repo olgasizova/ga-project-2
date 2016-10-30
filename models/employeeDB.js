@@ -3,28 +3,39 @@ const dbConnection = 'mongodb://localhost:27017/employeeDB';
 
 
 
-const findEmployee = (req, res, next) => {
+function findEmployee(req, res, next){
    MongoClient.connect(dbConnection, (err, db) => {
      if (err) return next(err);
 
      db.collection('employees')
-       .find(req.requestObject)
+       .find(req.body)
        .toArray((arrayError, data) => {
          if (arrayError) return next(arrayError);
-
-          // return data
-          res.findEmployee = data;
-          return next();
+         if(data.length > 0){
+            console.log('user found:');
+            console.log(data);
+            // return data
+            res.findEmployee = data;
+         }else{
+            //return error
+            console.log('user not found');
+            res.error='User not found.';
+         }
+         db.close;
+         return next();
        });
+       return false;
    });
+   return false;
 };
 
-const addEmployee = (req, res, next) => {
-   MongoClient.connect(dbConnection, (err, db) => {
+function addEmployee(req, res, next){
+  MongoClient.connect(dbConnection, (err, db) => {
      if (err) return next(err);
 
      let userExistsFilter = {};
-     userExistsFilter.email=req.requestObject.email;
+     console.log("User email filter = " + req.body.email);
+     userExistsFilter.email=req.body.email;
 //   check if emloyee exists
 
        db.collection('employees')
@@ -32,31 +43,42 @@ const addEmployee = (req, res, next) => {
        .toArray((arrayError, data) => {
           if (arrayError) return next(arrayError);
 
-          if (data.length) res.status(500).send({ error: 'User exists' });
+          console.log(data.length);
 
-          return next();
+          if (data.length>0) {
+            console.log('user exists');
+            res.error='User exists.';
+            db.close();
+            return next(res.error);
+
+          }
+          return false;
+
        });
+
+
 
        // actual add new  employee
        db.collection('employees')
-       .insert(req.requestObject,
-                function(err,records){
-                  res.addedEmployee = records[0];
-                  console.log("Record added as " + records[0]._id);
+       .insertOne(req.body,
+                function(err,record){
+                  if(err) return next(err);
+                  console.log("Record inserted:");
+                  console.log(record.ops);
 
-                  res.newEmployee = records[0];
-
+                  res.newEmployee = record.ops;
+                  console.log("Record added as " + record.insertedId);
+                  db.close();
                   return next();
                 });
-      return false;
+        return false;
 
+  });
 
-   });
-
-
-
-  return { employeeDB };
+  return false;
 };
+
+
 
 module.exports = {
   findEmployee,

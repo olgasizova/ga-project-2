@@ -4,24 +4,42 @@
 
 const express       = require('express');
 const logger        = require('morgan');
+const bodyParser = require('body-parser');
 
 const loginRoute    = require('./routes/login');
 const signupRoute   = require('./routes/signup');
 const profileRoute   = require('./routes/profile');
 const dashboardRoute   = require('./routes/dashboard');
 
+const Router = require('express').Router();
+
 const app           = express();
 const PORT          = process.argv[2] || process.env.PORT || 3000;
 
 app.use(logger('dev'));
 
-app.listen(PORT, () => console.warn('Onboard server is listening on ', PORT));
 
 app.set('view engine', 'ejs');
 app.set('views', 'views');
+
+
 
 app.use(express.static('public'));
 app.use('/', loginRoute);
 app.use('/', signupRoute);
 app.use('/', profileRoute);
 app.use('/', dashboardRoute);
+
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }));
+
+// parse application/json credit: http://stackoverflow.com/questions/9177049/express-js-req-body-undefined
+app.use(bodyParser.json());
+
+app.listen(PORT, () => console.warn('Onboard server is listening on ', PORT));
+
+module.exports = app;
+
+
+
+

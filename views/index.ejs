@@ -8,22 +8,20 @@
   <link rel="stylesheet" href="/css/styles.css">
   <script src="/js/moment.js" type="text/javascript"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript"></script>
-  <script src="/js/script.js" type="text/javascript" async defer></script>
+  <script src="/js/login.js" type="text/javascript"></script>
 </head>
 <body>
 <div class="main-container">
 <div class="sign-in">
 <h1>Login</h1>
 <div class="user-name">
-    <div class="error">
-    <span>error message</span><br>
-    </div>
-    <span>User Name</span><br>
-    <input type="text" name="username"><br><br>
+    <div class="error"></div>
+    <span>Email</span><br>
+    <input type="text" name="username" id="email"><br><br>
     <span>Password</span><br>
-    <input type="password" name="password"><br><br>
+    <input type="password" name="password" id="pwd"><br><br>
 
-    <button type="button">Sign In</button><br>
+    <button type="button" id="sign-in-btn">Sign In</button><br>
     <a href="http://localhost:3000/signup">Sign Up</a>
     </div>
 </div>
