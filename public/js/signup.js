@@ -6,15 +6,11 @@ $(document).ready(()=>{
 function doOnClick(){
     let newUser = {};
 
-    newUser.userName = $('#uname').val();
     newUser.email = $('#email').val();
     newUser.pwd1 = $('#pwd1').val();
     newUser.pwd2 = $('#pwd2').val();
     let $error = $('div.error').text("");
 
-    if(!newUser.userName){
-      $error.html("User name is empty");
-    }
     if(!newUser.email){
       $error.html($error.html() + "<br>Email is empty");
     }

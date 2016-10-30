@@ -1,4 +1,7 @@
+'use strict'
 const Router = require('express').Router();
+const {addEmployee}  = require('../models/employeeDB');
+
 
 
 
@@ -10,7 +13,8 @@ Router.get('/signup', (req, res) => {
 
 });
 
-Router.post('/signup/adduser', (req, res) => {
+Router.post('/signup/adduser', addEmployee, (req, res) => {
+
   res.json({'status':'ok'});
 
 
