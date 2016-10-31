@@ -1,6 +1,6 @@
 # ga-project-2 
 
-OnBoard App
+**OnBoard App**
 
 Problem: Have you ever tried to collaborate with your co-workers outside of your department and simply couldn't find their contact info, what they look like, or what they do? Often-times, employees don't have their company's organization chart readily available which results in a lack of communication among teams, and missed opportunities for innovation and collaboration.
 
