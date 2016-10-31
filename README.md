@@ -11,7 +11,7 @@ I propose an application, called "OnBOARD" which allows for companies to customi
 2. Address API - that will correct address http://www.yaddress.net/Home/WebApi
 2. Google Maps API displaying employee location - (on the wish list)
 3. Search capability - (on the wish list)
-4. When clicking on a record ability to preview information about that employee.
+4. When clicking on a record ability to preview information about that employee
 
 ##**Technologies:**
 
