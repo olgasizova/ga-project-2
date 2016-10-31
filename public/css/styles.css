@@ -1,8 +1,27 @@
+/*font-family: 'Lobster Two', cursive;*/
 body {
   color: white;
 }
 
 .onboard {
+  color: tomato;
+  font-size: 40px;
+  padding-left: 50px;
+  font-family: 'Lobster', cursive;
+  font-size: 65px;
+  margin-top: -30px;
+}
+
+#onboard-dashboard {
+  color: tomato;
+  font-size: 40px;
+  padding-left: 50px;
+  font-family: 'Lobster', cursive;
+  font-size: 65px;
+  margin-top: -1px;
+}
+
+#onboard {
   color: tomato;
   font-size: 40px;
   padding-left: 50px;
@@ -17,42 +36,85 @@ h1 {
 }
 
 .error {
-  color: red;
+  color: rgb(13, 11, 7);;
 }
 
+#profile {
+  font-size: 50px;
+  text-align: center;
+/*  padding-top: 30px;*/
+  color: white;
+  margin-top: -10px;
+  padding-top: 50px;
+  margin-bottom: 10px;
+}
 .sign-up {
   margin: auto;
   margin-top: 125px;
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 450px;
+  height: 500px;
   background-color: orange;
+  background-color: rgba(41, 136, 209, 0.6);
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
 }
 
 .user-profile {
-  margin: auto;
+ /* margin: auto;*/
   /*margin-top: 125px;*/
+  margin-left: 600px;
   position: relative;
-  width: 400px;
-  height: 800px;
-  background-color: purple;
+  width: 450px;
+  height: 750px;
+  background-color: rgba(41, 136, 209, 0.6);
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
 
 }
 
 .user-profile-fields {
   margin: auto;
   width: 300px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .sign-in {
   margin: auto;
   margin-top: 125px;
   position: relative;
-  width: 400px;
-  height: 400px;
-  background-color: tomato;
+  width: 450px;
+  height: 500px;
+  /*background-color: rgba(217, 64, 38, 0.5);*/
+  /*background-color: rgba(58, 181, 43, 0.7);*/
+  /*background-color: rgba(255, 255, 255, 0.7);*/
+  background-color: rgba(41, 136, 209, 0.6);
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
 }
 
+#dont-text {
+  text-transform: none;
+  color: black;
+  font-size: 14px;
+}
+
+#login {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+}
+
+
+#signup {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+}
 
 
 .flex-container {
@@ -90,25 +152,92 @@ h1 {
   height: 840px;
   background-color: #faebd7;
   position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/signup_background.jpg);
 }
 
 .main-container-profile {
   width: 100%;
-  height: 1000px;
-  background-color: #faebd7;
+  height: 100%;
+  /*background-color: #faebd7;*/
   position: absolute;
-
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/profile_background.jpg);
 }
 
 
-
 .photo {
- width: 300px;
- height:300px;
- background-color: gray;
-position: absolute;
+ width: 350px;
+ height:350px;
+ background-color: white;
+ position: relative;
+ border-radius: 50%;
+ margin-left: 50px;
 }
 
 .admin {
 
 }
+
+#sign-in-btn {
+    background-color: tomato;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#signupbutton {
+    background-color: tomato;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#button-validate {
+    background-color: tomato;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#button-save {
+    background-color: tomato;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+}
+
+
+
+a {
+    color: tomato;
+    text-decoration: underline;
+}
+
+a:hover
+{
+     color: white;
+     text-decoration: underline;
+     cursor:pointer;
+}
+
+

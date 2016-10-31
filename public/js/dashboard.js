@@ -38,7 +38,7 @@ function loadPersonArr(findFilter, doneCallback){
 // callback function shows greeting
 function showGreeting(data){
     let usr= data[0];
-    $('.user-greeting').text('Hello ' + usr.userName);
+    $('.user-greeting').text('Welcome on board ' + usr.userName + '!');
 
 }
 

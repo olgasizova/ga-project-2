@@ -1,5 +1,5 @@
-body{
-  background-color: red;
+html,body{
+/*  background-color: red;*/
   margin: 0px;
 }
 
@@ -7,14 +7,34 @@ div.main-container-dashboard{
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: blue;
+/*  background-color: blue;*/
 }
 
+#onboard-dash{
+  padding-bottom: -20px;
+}
+
+#dashboard {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 1px;
+  margin-top: -25px;
+  color: rgb(41, 136, 209);;
+}
+
+
+h2 {
+  color: rgb(41, 136, 209);
+  margin-top: -70px;
+  padding-left: 50px;
+  font-family: 'Lobster', cursive;
+
+}
 div.header{
   position:absolute;
-  height: 100px;
+  height: 10px;
   width: 100%;
-  background-color: green;
+/*  background-color: green;*/
 }
 
 div.left-pan{
@@ -23,7 +43,7 @@ div.left-pan{
   top:100px;
   height: 1000px;
   width: 50%;
-  background-color: yellow;
+/*  background-color: yellow;*/
 }
 
 div.right-pan{
@@ -38,6 +58,7 @@ div.right-pan{
 div.photo
 {
   position:static;
+ /* background-color: blue;*/
   width:200px;
   height:200px;
   margin-left:auto;
@@ -50,16 +71,28 @@ table.emp-description{
   position:absolute;
   padding:20px;
   color:black;
-  border:1px solid black;
+/*  border:1px solid black;*/
   width:80%;
   left:10%;
+  font-family: 'Roboto', sans-serif;
 }
 
 
+#ui-fname {
+  height: 20px;
+  text-align: right;
+}
+
+#ui-lname {
+  height: 20px;
+  text-align: left;
+}
+
 
 table.emp-description td{
-  border-bottom:2px solid blue;
+  border-bottom:2px solid tomato;
   width:50%;
+  font-size: 20px;
 }
 
 div.emp-list-container{
@@ -69,22 +102,24 @@ div.emp-list-container{
   height:600px;
   overflow:auto;
   background-color:tomato;
-  border:1px solid black;
+  font-size: 20px;
+ /* border:1px solid black;*/
 }
 
 table.emp-list{
   position:absolute;
   padding:20px;
-  color:black;
+  color: white;
   width:80%;
   left:10%;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
 
 }
 
 
 table.emp-list td{
-  border: 1px solid blue;
-  cursor: pointer;
+  border-bottom:2px solid white;
 }
 
 
