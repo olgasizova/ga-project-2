@@ -20,10 +20,10 @@ As a type 2 user (CEO of a company), I want to quickly find my employees' contac
 
 ##**Technologies:**
 
-*HTML, CSS and JavaScript for front-end/client
-*Nodejs, Express, Morgan to build server
-*Mongodb to create database of employees
-*Google maps API (on wish list)
-*AJAX to communicate with server
-*Sketch for wireframes
+* HTML, CSS and JavaScript for front-end/client
+* Nodejs, Express, Morgan to build server
+* Mongodb to create database of employees
+* Google maps API (on wish list)
+* AJAX to communicate with server
+* Sketch for wireframes
 
