@@ -1,4 +1,4 @@
-html,body{
+body{
   background-color: red;
   margin: 0px;
 }
@@ -38,7 +38,6 @@ div.right-pan{
 div.photo
 {
   position:static;
-  background-color: blue;
   width:200px;
   height:200px;
   margin-left:auto;
@@ -56,16 +55,6 @@ table.emp-description{
   left:10%;
 }
 
-
-#ui-fname {
-  height: 20px;
-  text-align: right;
-}
-
-#ui-lname {
-  height: 20px;
-  text-align: left;
-}
 
 
 table.emp-description td{
@@ -95,6 +84,7 @@ table.emp-list{
 
 table.emp-list td{
   border: 1px solid blue;
+  cursor: pointer;
 }
 
 

@@ -6,49 +6,46 @@
   <title>Profile Page</title>
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="/js/profile.js" type="text/javascript"></script>
 </head>
 <body>
 <div class="main-container-profile">
-<div class="photo"></div>
+<div class="photo" id="photo"></div>
 </div>
 
 <div class="user-profile">
 <div class="user-profile-fields">
     <h1>Profile</h1>
-    <div class="error">
-    <span>error message</span>
-    </div>
+    <div class="error"></div>
     <span>User Name</span><br>
-    <input type="text" name="username"><br><br>
-    <span>Email</span><br>
-    <input type="text" name="email"><br><br>
+    <input type="text" name="username" id="username"></input>
+    <br><br>
     <span>Employee ID</span><br>
-    <input type="text" name="employeeid"><br><br>
-    <span>Name</span><br>
-    <input type="text" name="name"><br><br>
+    <input type="text" name="employeeid" id="employee-id"></input><br><br>
      <span>Title</span><br>
-    <input type="text" name="title"><br>
+    <input type="text" name="title" id="title"></input><br><br/>
     <span>Admin</span>
-    <input type="checkbox" name="admin"><br><br>
+    <input type="checkbox" name="admin" id="admin"></input><br><br>
      <span>Phone Number</span><br>
-    <input type="text" name="phonenumber"><br><br>
+    <input type="text" name="phone" id="phone"></input><br><br>
     <span>Photo URL</span><br>
-    <input type="text" name="photourl"><br><br>
+    <input type="text" name="photourl" id="photo-url"></input><br><br>
 
     <div class="address-non-validated">
     <span>Address Line 1</span><br>
-    <input type="text" name="AddressLine1"><br>
+    <input type="text" name="AddressLine1"></input><br>
     <span>Address Line 2</span><br>
-    <input type="text" name="AddressLine2"><br><br>
-    <button type="button">Validate</button>
+    <input type="text" name="AddressLine2"></input><br><br>
+    <button type="button" id="button-validate">Validate</button>
     </div>
-    <div class="address-validated"><br>
-    <span>Validated Address</span><br>
-    <textarea name="validated-address">
+    <div class="address-validated" ><br>
+      <span>Validated Address</span><br>
+      <textarea name="validated-address" id="address">
 
-      <%= validAddress.ErrorMessage %>
-    </textarea><br>
-    <button type="button">Save</button>
+        <%= validAddress.ErrorMessage %>
+      </textarea><br>
+      <button type="button" id="button-save">Save</button>
     </div>
     </div>
 </div>

@@ -2,6 +2,14 @@ body {
   color: white;
 }
 
+.onboard {
+  color: tomato;
+  font-size: 40px;
+  padding-left: 50px;
+  font-family: 'Lobster', cursive;
+  font-size: 65px;
+  margin-top: -30px;
+}
 
 h1 {
   text-align: center;
@@ -42,7 +50,7 @@ h1 {
   position: relative;
   width: 400px;
   height: 400px;
-  background-color: green;
+  background-color: tomato;
 }
 
 
@@ -61,10 +69,11 @@ h1 {
 .main-container {
   width: 100%;
   height: 100%;
-  background-color: #faebd7;
+  /*background-color: #faebd7;*/
   position: absolute;
   background-size: cover;
   background-repeat: no-repeat;
+  background-image: url(../images/login_background.jpg);
 }
 
 #unsplash-images {
