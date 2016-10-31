@@ -22,6 +22,7 @@ As a type 2 user (CEO of a company), I want to quickly find my employees' contac
 
 ###**Login Page**
 [Imgur](http://i.imgur.com/O7wHHw9.png)
+http://imgur.com/QOBGULe
 
 ###**Signup Page**
 [Imgur](http://i.imgur.com/ZQbS41D.png)
