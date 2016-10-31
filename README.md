@@ -18,7 +18,7 @@ As a type 2 user (CEO of a company), I want to quickly find my employees' contac
 3. Search capability - (on the wish list)
 4. When clicking on a record ability to preview information about that employee
 
-##**Wireframes
+##**Wireframes**
 
 ###**Login Page**
 [Imgur](http://i.imgur.com/O7wHHw9.png)
