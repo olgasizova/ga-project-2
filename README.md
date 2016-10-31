@@ -23,6 +23,15 @@ As a type 2 user (CEO of a company), I want to quickly find my employees' contac
 ###**Login Page**
 [Imgur](http://i.imgur.com/O7wHHw9.png)
 
+###**Signup Page**
+[Imgur](http://i.imgur.com/ZQbS41D.png)
+
+###**Profile Page**
+[Imgur](http://i.imgur.com/0MDJkGV.png)
+
+###**Dashboard Page**
+[Imgur](http://i.imgur.com/QOBGULe.png)
+
 ##**Technologies:**
 
 * HTML, CSS and JavaScript for front-end/client
