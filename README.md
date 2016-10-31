@@ -1,8 +1,10 @@
 # **OnBoard App - Project 2**
 
-##**Problem:** Have you ever tried to collaborate with your co-workers outside of your department and simply couldn't find their contact info, what they look like, or what they do? Often-times, employees don't have their company's organization chart readily available which results in a lack of communication among teams, and missed opportunities for innovation and collaboration.
+##**Problem:** 
+Have you ever tried to collaborate with your co-workers outside of your department and simply couldn't find their contact info, what they look like, or what they do? Often-times, employees don't have their company's organization chart readily available which results in a lack of communication among teams, and missed opportunities for innovation and collaboration.
 
-##**Solution:** I propose an application, called "OnBOARD" which allows for companies to customize their organization chart and access it online without the need to keep a printed version.
+##**Solution:** 
+I propose an application, called "OnBOARD" which allows for companies to customize their organization chart and access it online without the need to keep a printed version.
 
 ##**MVP OnBoard Features:**
 1. CRUD: Creating, Removing, Updating, and Deleting an employee record
