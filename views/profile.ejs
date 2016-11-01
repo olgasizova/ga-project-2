@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/styles.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript"></script>
-  <script src="/js/profile.js" type="text/javascript"></script>
+    <script src="/js/profile.js" type="text/javascript"></script>
+    <script src="/js/address.js" type="text/javascript"></script>
 </head>
 <body>
 <div class="main-container-profile">
@@ -38,14 +39,14 @@
 
     <div class="address-non-validated">
     <span>Address Line 1</span><br>
-    <input type="text" name="AddressLine1"></input><br>
+    <input type="text" name="address-line-1" id="address-line-1"></input><br>
     <span>Address Line 2</span><br>
-    <input type="text" name="AddressLine2"></input><br><br>
+    <input type="text" name="address-line-1" id="address-line-2"></input><br><br>
     <button type="button" id="button-validate">Validate</button>
     </div>
     <div class="address-validated" ><br>
       <span>Validated Address</span><br>
-      <textarea name="validated-address" id="address">
+      <textarea name="address-validate" id="address-validate">
 
       </textarea><br>
       <button type="button" id="button-save">Save</button>

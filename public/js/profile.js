@@ -34,7 +34,7 @@ function doOnClick(){
     upEmp.admin = $('#admin').val();
     upEmp.phone = $('#phone').val();
     upEmp.photoUrl = $('#photo-url').val();
-    upEmp.address = $('#address').val().trim();
+    upEmp.address = $('#address-line-1').val().trim() + ' ' + $('#address-line-2').val().trim();
 
     let $error = $('div.error').text("");
 

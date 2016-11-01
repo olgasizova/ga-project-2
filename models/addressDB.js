@@ -4,11 +4,11 @@ const dbConnection = 'mongodb://localhost:27017/employeeDB';
 
 
 
-function findEAddress(req, res, next){
+function findAddress(req, res, next){
    MongoClient.connect(dbConnection, (err, db) => {
      if (err) return next(err);
 
-     let query = {_id:ObjectId(req.body._id)};
+     let query = {_id:ObjectId(req.param._id)};
 
      db.collection('addresses')
        .find(query)
@@ -18,7 +18,7 @@ function findEAddress(req, res, next){
             console.log('address found:');
             console.log(data);
             // return data
-            res.findEmployee = data;
+            res.foundAddress = data;
          }else{
             //return error
             console.log('address not found');
@@ -54,7 +54,7 @@ function updateAddress(req, res, next){
               console.log("Record updated:");
               console.log(record);
 
-              res.updEmployee = record.value;
+              res.updAddress = record.value;
               console.log("Record updated as " + record.value._id);
               db.close();
               return next();

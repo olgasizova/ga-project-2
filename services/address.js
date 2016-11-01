@@ -13,9 +13,10 @@ function validateAddress(req, res, next){
     next();
   })
   .catch((err) => {
-    res.err = err;
+    res.error = err;
     next();
   })
+  return false;
 
 }
 

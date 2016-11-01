@@ -2,7 +2,7 @@
 const app = require('../app');
 const Router = require('express').Router();
 
-const {validateAddress } = require('../services/address');
+
 const {updateEmployee}  = require('../models/employeeDB');
 
 const bodyParser = require('body-parser');
@@ -13,13 +13,13 @@ Router.use(bodyParser.urlencoded({ extended: true })); // for parsing applicatio
 
 
 
-Router.get('/profile', validateAddress, (req, res) => {
-  res.render('profile', {
-    validAddress: res.fetchData
-  });
+// Router.get('/profile', validateAddress, (req, res) => {
+//   res.render('profile', {
+//     validAddress: res.fetchData
+//   });
 
 
-});
+// });
 
 
 Router.post('/profile/update', updateEmployee,(req, res) => {
