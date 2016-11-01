@@ -1,10 +1,10 @@
 'use strict'
 const app = require('../app');
 const Router = require('express').Router();
-const http = require('http');
-const url  = require('url');
+//const http = require('http');
+//const url  = require('url');
 
-const {validateAddress } = require('../services/address');
+const {validateAddress} = require('../services/address');
 
 const {findAddress}  = require('../models/addressDB');
 const {updateAddress}  = require('../models/addressDB');
@@ -44,15 +44,16 @@ Router.post('/address/save', updateAddress, (req, res) => {
 
 });
 
-Router.post('/address/validate', validateAddress, (req, res) => {
-  console.log(req.body);
+// create route to validate address GET method
+Router.get('/address/validate', validateAddress, (req, res) => {
+  console.log(req.query);
   if (res.error){
-    console.log("error response getting address");
+    console.log("error response validating address");
     console.log(res.error);
     res.status(500).send(res.error);
   }
   else {
-    console.log('success response getting address');
+    console.log('success response validating address');
     console.log(res.fetchData);
     res.json(res.fetchData);
   }

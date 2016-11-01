@@ -10,6 +10,7 @@ const loginRoute    = require('./routes/login');
 const signupRoute   = require('./routes/signup');
 const profileRoute   = require('./routes/profile');
 const dashboardRoute   = require('./routes/dashboard');
+const addressRoute   = require('./routes/address');
 
 const Router = require('express').Router();
 
@@ -29,6 +30,7 @@ app.use('/', loginRoute);
 app.use('/', signupRoute);
 app.use('/', profileRoute);
 app.use('/', dashboardRoute);
+app.use('/', addressRoute);
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));

@@ -13,13 +13,9 @@ Router.use(bodyParser.urlencoded({ extended: true })); // for parsing applicatio
 
 
 
-// Router.get('/profile', validateAddress, (req, res) => {
-//   res.render('profile', {
-//     validAddress: res.fetchData
-//   });
-
-
-// });
+Router.get('/profile', (req, res) => {
+    res.render('profile', {});
+ });
 
 
 Router.post('/profile/update', updateEmployee,(req, res) => {

@@ -8,8 +8,10 @@ function findEmployee(req, res, next){
    MongoClient.connect(dbConnection, (err, db) => {
      if (err) return next(err);
 
-     let query = req.body;
-
+     let query = {};
+     if(req.query._id){
+       query._id = ObjectId(req.query._id);
+     }
 
      db.collection('employees')
        .find(query)

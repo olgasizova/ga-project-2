@@ -9,6 +9,13 @@ Router.use(bodyParser.json()); // for parsing application/json
 Router.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
 
+Router.get('/', (req, res) => {
+  res.render('index', {
+    // image: res.backgroundImage.urls,
+
+  });
+});
+
 Router.get('/login', (req, res) => {
   res.render('index', {
     // image: res.backgroundImage.urls,

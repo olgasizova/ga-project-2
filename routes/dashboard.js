@@ -17,8 +17,8 @@ Router.get('/dashboard', (req, res) => {
   res.render('dashboard')
 });
 
-Router.post('/dashboard/get', findEmployee, (req, res) => {
-  console.log(req.body);
+Router.get('/dashboard/get', findEmployee, (req, res) => {
+  console.log(req.query);
   if (res.error){
     console.log("error response getting employee");
     console.log(res.error);

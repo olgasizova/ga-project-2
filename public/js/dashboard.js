@@ -22,8 +22,8 @@ $.urlParam = function(name) {
 function loadPersonArr(findFilter, doneCallback){
     $.ajax({
       url: '/dashboard/get',
-      data: JSON.stringify(findFilter),
-      method: 'POST',
+      data: findFilter,
+      method: 'GET',
       dataType: 'json',
       contentType: 'application/json'
     })
@@ -39,12 +39,13 @@ function loadPersonArr(findFilter, doneCallback){
 function showGreeting(data){
     let usr= data[0];
     $('.user-greeting').text('Welcome on board ' + usr.userName + '!');
+    dispEmployee(usr);
 
 }
 
 // callback loads table
 function loadTable(data){
-
+    
     $('table.emp-list tbody').empty();
 
     for(let i=0; i<data.length; i++){

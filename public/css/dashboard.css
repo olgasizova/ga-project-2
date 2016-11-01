@@ -65,6 +65,9 @@ div.photo
   margin-right:auto;
   margin-top:10px;
   margin-bottom:10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+
 }
 
 table.emp-description{
