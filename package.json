@@ -1,9 +1,13 @@
 {
   "name": "ga-project-2",
+  "engines": {
+    "node": "6.6.0"
+  },
   "version": "1.0.0",
   "description": "Onboard App ",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
