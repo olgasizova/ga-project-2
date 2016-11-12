@@ -38,12 +38,12 @@ function validateAddress(){
 // success callback
   .done((data)=>{
       let msg = data.ErrorMessage || 'OK';
-      
+
       $('#address-validate').val(msg);
       $('#address-line-1').val(data.AddressLine1);
       $('#address-line-2').val(data.AddressLine2);
 
-      saveAddress(data);
+      // saveAddress(data);
   })
   .fail((err,status)=>{
     $('div.error').html(err.responseText);
@@ -53,7 +53,7 @@ function validateAddress(){
 function saveAddress(objAddress){
     //add ObjectIDto save address
     objAddress._id = $._id;
-    
+
     $.ajax({
       url: '/address/save',
       data: JSON.stringify(objOrigAddress),
@@ -68,5 +68,5 @@ function saveAddress(objAddress){
   })
   .fail((err,status)=>{
     $('div.error').html(err.responseText);
-  });
+  })
 }
